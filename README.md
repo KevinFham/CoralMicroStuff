@@ -1,39 +1,31 @@
 # FlockingEaglesCoralMicro
 
-> fuck c++
+fuck c++
 
 ### Instructions
 
-`cd ~/Arduino`
+`cd coralmicro/apps`
 
 `git clone https://gitlab.com/oscar88/flockingeaglescoralmicro.git`
 
 `mv flockingeaglescoralmicro/* .`
 
+Add these lines in `coralmicro/apps/CMakeLists.txt`
+```
+add_subdirectory(test_serial)
+add_subdirectory(test_VL53L0X)
+add_subdirectory(test_MPU9250)
+```
+
 ### Coral Micro Docs
 
-[Getting Started](https://coral.ai/docs/dev-board-micro/arduino/)
+https://coral.ai/docs/dev-board-micro/get-started/#3-boot-up-for-the-first-time
 
-[Arduino API](https://coral.ai/docs/reference/micro/arduino/)
+Note: in scripts/requirements.txt, set `hidapi==0.10.1` to `hidapi==0.11.2`
 
-### FreeRTOS Dev in Arduino
+### FreeRTOS app dev
 
-Arduino will not have access to certain libs such as `ipc_m4.h` and `ipc_m7.h` after setup. You must insert the libs from the [Coral Micro Source Code](https://github.com/google-coral/coralmicro) into the board's package files
-
-`cp -r coralmicro/libs/base/ ~/.arduino15/packages/coral/hardware/coral_micro/1.0.1/variants/coral_micro/libs` 
-
-# Dependencies
-
-[Coral Arduino Package](https://coral.ai/docs/dev-board-micro/arduino/#2-install-the-coral-package)
-
-[Bolder_Flight_Systems_InvenSense_IMU](https://github.com/bolderflight/invensense-imu) (v3.1.3) by borderflight (for MPU9250)
-
-[VL53L0X](https://github.com/pololu/vl53l0x-arduino) (v1.3.1) by Pololu
-
-[RF24](https://nrf24.github.io/RF24/) (v1.4.8) by TMRh20 (for nRF24L01)
-
-
-[PCA9685](https://github.com/janelia-arduino/PCA9685) (v3.0.1) by Peter Polidoro
+https://coral.ai/docs/dev-board-micro/freertos/
 
 # Issues
 
@@ -51,6 +43,5 @@ https://coral.ai/docs/dev-board-micro/arduino/#troubleshooting
 
 4. Connect to serial (either through `screen /dev/ttyACM0 115200` or Arduino Serial Monitor)
 
-### TODO
 
-- [ ] Fix nRF24L01 randomly failing to communicate (with [RF24Network by TMRh20](https://nrf24.github.io/RF24Network/) library?)
+
