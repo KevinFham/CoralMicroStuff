@@ -1,14 +1,16 @@
-# FlockingEaglesCoralMicro
+# CoralMicroStuff
 
-fuck c++
+Sandboxing stuff w/ the Google Coral Micro
+
+> i hate c++
 
 ### Instructions
 
 `cd coralmicro/apps`
 
-`git clone https://gitlab.com/oscar88/flockingeaglescoralmicro.git`
+`git clone https://github.com/KevinFham/CoralMicroStuff.git`
 
-`mv flockingeaglescoralmicro/* .`
+`mv CoralMicroStuff/* .`
 
 Add these lines in `coralmicro/apps/CMakeLists.txt`
 ```
