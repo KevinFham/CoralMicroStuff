@@ -1,6 +1,8 @@
 # CoralMicroStuff
 
-> fuck c++
+Sandboxing stuff w/ the Google Coral Micro
+
+> i hate c++
 
 ### Instructions
 
