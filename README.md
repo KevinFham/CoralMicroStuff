@@ -1,4 +1,4 @@
-# FlockingEaglesCoralMicro
+# CoralMicroStuff
 
 > fuck c++
 
@@ -6,9 +6,9 @@
 
 `cd ~/Arduino`
 
-`git clone https://gitlab.com/oscar88/flockingeaglescoralmicro.git`
+`git clone https://github.com/KevinFham/CoralMicroStuff.git`
 
-`mv flockingeaglescoralmicro/* .`
+`mv CoralMicroStuff/* .`
 
 ### Coral Micro Docs
 
