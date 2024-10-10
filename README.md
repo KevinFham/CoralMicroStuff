@@ -34,14 +34,14 @@ https://coral.ai/docs/dev-board-micro/arduino/#troubleshooting
 
 ## To Do
 
-[X] Setup script
-[ ] Build script
-    [ ] Pull relevant coral libs
-    [ ] Pull relevant third party libraries
-    [ ] Modify CMake scripts
-    [ ] Attempt to avoid using FreeRTOS (we want direct upload to usage pipeline)
-[ ] Create test cases with pre build models and test data
-[ ] Docker container?
+- [X] Setup script
+- [ ] Build script
+    - [ ] Pull relevant coral libs
+    - [ ] Pull relevant third party libraries
+    - [ ] Modify CMake scripts
+    - [ ] Attempt to avoid using FreeRTOS (we want direct upload to usage pipeline)
+- [ ] Create test cases with pre build models and test data
+- [ ] Docker container?
 
 
 
